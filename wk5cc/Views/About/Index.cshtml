@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+    <title>@ViewBag.Title</title>
+<h2>About</h2>
+
+
+<div>
+
+    <ul>
+
+        <li class="whoLink mouse" data-url="@Url.Action("Who","About")">Who</li>
+        <li class="whatLink mouse" data-url="@Url.Action("What", "About")">What</li>
+        <li class="whyLink mouse" data-url="@Url.Action("Why", "About")">Why</li>
+        <li class="howLink mouse" data-url="@Url.Action("How", "About")">How</li>
+        <li class="whereLink mouse" data-url="@Url.Action("Where", "About")">Where</li>
+    </ul>
+
+</div>
+
+<div id="content">
+    @Html.Partial("Who")
+</div>
